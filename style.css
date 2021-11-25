@@ -1,11 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 .ModalWrapper {
   width: 100%;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.33);
+  background: rgba(94, 114, 228, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,51 +15,89 @@
 .areYouSureModal {
   width: 400px;
   height: 200px;
-  background-color: rgb(179, 179, 179);
+  background: rgba(52, 57, 87, 0.7);
+  backdrop-filter: blur(24px);
+  color: #e7e7e7;
+
   border-radius: 12px;
-  position: relative;
   /* border: 1px solid rgb(85, 85, 85); */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-between;
+  /* gap: 20px; */
+  padding-bottom: 10px;
+  overflow: hidden;
 }
 .areYouSureModal span {
+  font-size: 24px;
+  font-weight: 500;
+}
+.areYouSureModalNav {
+  width: 100%;
+  height: 40px;
+  background: rgba(196, 196, 196, 0.01);
+  box-shadow: 0px 1px 5px rgba(255, 255, 255, 0.25);
+  border-radius: 12px 12px 0px 0px;
+  /* background-color: rgb(46, 46, 46); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.areYouSureModalNav span {
+  margin-left: 11px;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
+  color: #e7e7e7;
 }
 .crossCollapse {
-  position: absolute;
+  /* position: absolute; */
+  margin-right: 11px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: rgb(255, 255, 255);
-  right: 6px;
-  top: 6px;
+  background: #343957;
+  filter: blur(0px);
+  /* right: 6px;
+  top: 6px; */
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(61, 61, 61);
+  color: white;
   cursor: pointer;
+}
+.crossCollapse .fas {
+  color: #e7e7e7;
+  font-size: 18px;
 }
 .modalBtnsWrap {
   /* background-color: tomato; */
   display: flex;
   justify-content: center;
   gap: 12px;
+  width: 100%;
 }
 .modalCancleBtn,
 .modalConfirmBtn {
-  padding: 8px 16px;
+  /* padding: 8px 16px; */
   /* background-color: turquoise; */
+  width: 45%;
+  height: 36px;
   border-radius: 9px;
   color: white;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .modalCancleBtn {
-  background-color: tomato;
+  background: rgba(255, 22, 22, 0.75);
+  filter: blur(0.1px);
+  backdrop-filter: blur(5px);
+  /* color: white; */
 }
 .modalConfirmBtn {
-  background-color: #66a800;
+  background: rgba(126, 211, 33, 0.75);
+  filter: blur(0.1px);
+  backdrop-filter: blur(5px);
 }
