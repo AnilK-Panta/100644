@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.ModalWrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.33);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.areYouSureModal {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(179, 179, 179);
+  border-radius: 12px;
+  position: relative;
+  /* border: 1px solid rgb(85, 85, 85); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.areYouSureModal span {
+  font-size: 18px;
+  font-weight: bold;
+}
+.crossCollapse {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  right: 6px;
+  top: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(61, 61, 61);
+  cursor: pointer;
+}
+.modalBtnsWrap {
+  /* background-color: tomato; */
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.modalCancleBtn,
+.modalConfirmBtn {
+  padding: 8px 16px;
+  /* background-color: turquoise; */
+  border-radius: 9px;
+  color: white;
+  cursor: pointer;
+}
+.modalCancleBtn {
+  background-color: tomato;
+}
+.modalConfirmBtn {
+  background-color: #66a800;
+}
