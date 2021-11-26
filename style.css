@@ -14,7 +14,7 @@
 }
 .areYouSureModal {
   width: 400px;
-  height: 200px;
+  min-height: 200px;
   background: rgba(52, 57, 87, 0.7);
   backdrop-filter: blur(24px);
   color: #e7e7e7;
@@ -28,6 +28,7 @@
   /* gap: 20px; */
   padding-bottom: 10px;
   overflow: hidden;
+  gap: 25px;
 }
 .areYouSureModal span {
   font-size: 24px;
@@ -100,4 +101,55 @@
   background: rgba(126, 211, 33, 0.75);
   filter: blur(0.1px);
   backdrop-filter: blur(5px);
+}
+.fieldinputsModel {
+  width: 80%;
+  /* height: 50px; */
+  /* background-color: #e7e7e7; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.fieldinputsModel span {
+  font-size: 16px;
+}
+.inputBrandModel,
+.inputModelModel,
+.inputPriceModel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input {
+  border-radius: 6px;
+  border: none;
+  outline-style: none;
+  padding-left: 10px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.71);
+  font-size: 16px;
+  font-weight: 700;
+  color: #343957;
+}
+.modalUpdateBtn {
+  width: 45%;
+  height: 30px;
+  border-radius: 9px;
+  color: rgba(126, 211, 33, 0.75);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(126, 211, 33, 0.75);
+  font-weight: bold;
+}
+.modalUpdateBtn:hover {
+  background: rgba(126, 211, 33, 0.75);
+  color: white;
+  font-weight: 500;
 }
